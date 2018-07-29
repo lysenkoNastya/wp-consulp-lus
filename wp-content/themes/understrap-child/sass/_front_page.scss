@@ -1,0 +1,271 @@
+$section-front-page: #949a9b;
+$section-about-us-title: #343a3b;
+$btn-color: #16d428;
+$text-color: #fff;
+$bg-our-steps: #e7eff1;
+$border-contact: #e1eaec;
+$bg-testimonials: #03b6e7;
+$brand-color: #ffac56;
+
+.carousel-industry-section.carousel-inner {
+  padding-top: 17%;
+
+  @media (max-width: 575px) {
+    display: none;
+  }
+  @media (min-width: 576px) {
+    display: block;
+  }
+}
+
+.industry-mobiles-block {
+  @media (max-width: 575px) {
+    display: block;
+  }
+  @media (min-width: 576px) {
+    display: none;
+  }
+}
+
+.about-us {
+  padding: 95px 0;
+  position: relative;
+
+  .why-us {
+    color: $section-front-page;
+    font-size: 1rem;
+
+    &-text {
+      margin-bottom: 30px;
+    }
+
+    &-btn {
+      margin-bottom: 20px;
+      padding: 15px 25px;
+      background-color: $btn-color;
+      color: $text-color;
+      text-transform: uppercase;
+      border-radius: 20px;
+    }
+  }
+
+  a:not([href]):not([tabindex]) {
+    color: $text-color;
+  }
+
+  &-img {
+  }
+
+  &-img-years {
+    position: absolute;
+    top: 75%;
+    right: 20%;
+
+    @media (min-width: 578px) and (max-width: 767px){
+      top: 47%;
+      right: 15%;
+    }
+
+    @media (min-width: 768px) and (max-width: 960px){
+      top: 40%;
+      right: 5%;
+    }
+
+    @media (min-width: 961px) and (max-width: 1023px){
+      top: 47%;
+      right: 10%;
+    }
+
+    @media (min-width: 1024px) {
+      top: 50%;
+      right: 20%;
+    }
+  }
+}
+
+.why-us-title {
+  margin-bottom: 30px;
+  color: $section-about-us-title;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.why-us-subtitle {
+  text-transform: uppercase;
+}
+
+.our-steps {
+  padding: 165px 0 95px;
+  background-color: $bg-our-steps;
+
+  @media (min-width: 768px) {
+    padding: 95px 0;
+  }
+
+  &-subtitle {
+    color: $section-front-page;
+    text-transform: uppercase;
+  }
+
+  &-title {
+    margin-bottom: 25px;
+    color: $section-about-us-title;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &-item-title {
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  &-item-number {
+    margin-bottom: 15px;
+    color: $btn-color;
+    font-weight: 500;
+  }
+
+  &-item-img {
+    margin-bottom: 35px;
+  }
+
+  .business {
+    margin-bottom: -10px;
+  }
+}
+
+.contact-us {
+  padding: 95px 0;
+
+  &-item {
+    padding: 20px 30px;
+
+    .border-wrap {
+      padding: 35px;
+      border: 1px solid $border-contact;
+    }
+  }
+
+  .career {
+    margin-right: 0;
+  }
+
+  .title-contact-us {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+
+.carousel-industry {
+  padding: 100px 0 0;
+
+  .carousel-btn {
+    display: none;
+  }
+}
+
+.carousel-block-info {
+  margin-bottom: -2px;
+  padding: 20px 10px;
+  background-color: $brand-color;
+  display: inline-block;
+
+  @media (min-width: 576px) {
+    padding: 20px 50px;
+  }
+}
+
+section.clients-testimonials {
+  padding: 95px 0;
+  background-color: $bg-testimonials;
+  color: $text-color;
+
+}
+
+h3.why-us-title.industry,
+a.industry-menu-list-link,
+span.why-us-subtitle.industry{
+  color: $text-color;
+}
+
+.section-industry-list-item-image {
+  margin-bottom: 20px;
+}
+
+.industry-menu-list-item {
+  margin-bottom: 10px;
+}
+
+.industry-block {
+  padding: 20px 75px;
+  background-color: $bg-testimonials;
+  width: 100%;
+
+  @media (min-width: 361px) and (max-width: 767px) {
+    width: 97%;
+  }
+
+  @media (min-width: 768px) {
+    padding: 20px 50px;
+    width: 480px;
+  }
+}
+
+.carousel-item.active {
+  text-align: left;
+}
+
+li.item>p {
+  color: $text-color;
+  &:before {
+    margin-right: 20px;
+    font-family: FontAwesome;
+    content: "\f10d";
+    font-size: 2rem;
+    display: block;
+  }
+
+  &:after {
+    margin: 20px;
+    font-family: FontAwesome;
+    content: "\f10e";
+    font-size: 2rem;
+    display: block;
+  }
+}
+
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow,
+.slick-prev:before, .slick-next:before{
+  display: none;
+}
+
+ul.slick-dots {
+
+  & li button:before {
+    color: $text-color;
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin: 30px 15%;
+}
+
+
+.slider-image-list.slick-initialized.slick-slider.slick-dotted {
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+.testimonials-person-info-block {
+  display: none;
+
+  @media (max-width: 576px) {
+    display: block;
+  }
+}
